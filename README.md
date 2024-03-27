@@ -31,7 +31,7 @@ Follow these steps to set up the Restaurant Website on your local machine:
 
 ![Homepage](screenshots/homepage.png)
 ![Menu Page](screenshots/menupage.png)
-![Cart Page](screenshots/cartpage.png.png)
+![Cart Page](screenshots/cartpage.png)
 ![Payment Process](screenshots/paymentpage.png)
 
 ## Acknowledgements
