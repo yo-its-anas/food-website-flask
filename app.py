@@ -16,7 +16,7 @@ app = Flask(__name__,template_folder='templates')
 print("Templates directory contents:", os.listdir('templates'))
 
 
-uri = "mongodb+srv://balaji01975:li1wSy7d7hjOVZpl@food.djaiqj7.mongodb.net/?appName=food"
+# uri = "mongodb+srv://balaji01975:li1wSy7d7hjOVZpl@food.djaiqj7.mongodb.net/?appName=food"
 
 # Database
 client = MongoClient(uri, server_api=ServerApi('1'))
