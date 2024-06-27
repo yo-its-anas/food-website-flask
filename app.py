@@ -10,7 +10,7 @@ from pymongo.server_api import ServerApi
 
 
 app = Flask(__name__)
-app.secret_key = 'your secret key'
+
 
 uri = "mongodb+srv://balaji01975:li1wSy7d7hjOVZpl@food.djaiqj7.mongodb.net/?appName=food"
 
@@ -133,5 +133,3 @@ def register():
 def dashboard():
   return render_template('dashboard.html')
 
-if __name__ == '__main__':
-  app.run(debug=True)
