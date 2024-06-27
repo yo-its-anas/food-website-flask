@@ -5,11 +5,15 @@ from stripe_logic import create_checkout_session, stripe_public_key
 from stripe_logic import handle_checkout
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
+import os
 
 
 
 
-app = Flask(__name__)
+
+app = Flask(__name__,template_folder='templates')
+
+print("Templates directory contents:", os.listdir('templates'))
 
 
 uri = "mongodb+srv://balaji01975:li1wSy7d7hjOVZpl@food.djaiqj7.mongodb.net/?appName=food"
