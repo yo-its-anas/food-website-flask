@@ -1,7 +1,7 @@
 import stripe
 
-stripe_public_key = 'your public key'
-stripe_secret_key = 'your secret key'
+stripe_public_key = 'pk_test_51OxlFmSDXpmGBiOq1BgktK7hVRWT1MwsVY25EDfAfCsK24U6r0zO2WBEHIFqSgFxxGqYndbvby9DLP0ASCjTLd1A00udCdpVJF'
+stripe_secret_key = 'sk_test_51OxlFmSDXpmGBiOqjmAsyKRs4yz1VQJ5iwIMFYkt2srrPBBN9wrXmYEAua4WXvpOwrqL89bW6twpjB2rReL9N5vf00UKPO4PcP'
 
 stripe.api_key = stripe_secret_key
 

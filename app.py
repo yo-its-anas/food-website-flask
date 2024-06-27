@@ -3,18 +3,28 @@ from functools import wraps
 import pymongo
 from stripe_logic import create_checkout_session, stripe_public_key
 from stripe_logic import handle_checkout
+from pymongo.mongo_client import MongoClient
+from pymongo.server_api import ServerApi
+
 
 
 
 app = Flask(__name__)
 app.secret_key = 'your secret key'
 
-
+uri = "mongodb+srv://balaji01975:li1wSy7d7hjOVZpl@food.djaiqj7.mongodb.net/?appName=food"
 
 # Database
-client = pymongo.MongoClient('localhost', 27017)
+client = MongoClient(uri, server_api=ServerApi('1'))
+try:
+    client.admin.command('ping')
+    print("Pinged your deployment. You successfully connected to MongoDB!")
+except Exception as e:
+    print(e)
 db = client.food_website
 collection = db.food_items
+
+
 
 # Decorators
 def login_required(f):
