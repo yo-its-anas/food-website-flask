@@ -137,10 +137,6 @@ def register():
 def dashboard():
   return render_template('dashboard.html')
 
-templates_path = os.path.join(os.path.dirname(__file__), 'templates')
-if os.path.exists(templates_path):
-    print("Templates directory contents:", os.listdir(templates_path))
-else:
-    print("Templates directory not found!")
+
 
 
